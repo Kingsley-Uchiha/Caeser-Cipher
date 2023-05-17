@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <meta charset='utf-8'>
+      <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+      <title>Ceaser Cipher</title>
+      <meta name='viewport' content='width=device-width, initial-scale=1'>
+      <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+      <form>
+            <h1>Ceaser Cipher</h1>
+            <p>Encode or Decode your valuable information</p>
+            <textarea name="text" placeholder="Enter a message..." cols="30" rows="10" required title="Type your secret message"></textarea>
+            <div class="radios">
+                  <div class="label">
+                        <input type="radio" name="code" value="Encode" id="Encode" required>
+                        <label for="Encode">Encode</label>
+                  </div>
+                  <div class="label">
+                        <input type="radio" name="code" value="Decode" id="Decode" required>
+                        <label for="Decode">Decode</label>
+                  </div>
+            </div>
+            <input type="number" name="shiftNumber" placeholder="Shift number" autocomplete="off">
+            <div class="warn">Number too big</div>
+            <button>Submit</button>
+            <div class="output">
+                  <p><span>Output goes here</span></p>
+                  <button class="copy" type="button">Copy</button>
+            </div>
+      </form>
+
+      <script src="./app.js"></script>
+</body>
+</html>
